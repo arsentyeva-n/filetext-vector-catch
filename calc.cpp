@@ -22,7 +22,7 @@ void check_file(const string filename){
 	if (!f) throw invalid_argument("file don't exists");
 }
 
-/// заполнение файла случайными числами, nmax - самое больщое число, n - кол-во, filename - имя файла
+/// заполнение файла случайными числами, nmax - самое большое число, n - кол-во, filename - имя файла
 void write_file(unsigned nmax, unsigned n, const string &filename){
 	ofstream f(filename);
 	float x;
@@ -50,7 +50,7 @@ int size_file(const string &filename){
 
 
 /// заполнение массива числами из файла
-void read_file(vector_float &v, const string &filename, int &n2){
+void read_file(vector_float &v, const string &filename, unsigned &n2){
 	check_file(filename);
 	ifstream f_read(filename);
 	string buf;

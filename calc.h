@@ -21,7 +21,7 @@ void write_file(unsigned nmax, unsigned n, const string &filename);
 int size_file(const string &filename);
 
 /// заполнение массива числами из файла
-void read_file(vector_float &v, const string &filename, int &n2);
+void read_file(vector_float &v, const string &filename, unsigned &n2);
 
 /// нахождение произведения массива
 float mult_arr(const vector_float &v);

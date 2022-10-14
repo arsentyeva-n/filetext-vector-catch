@@ -12,9 +12,9 @@ int main(){
 	const string filename = "data";
 
 	srand(time(0));
-	int n,n2; 
+	unsigned n,n2; 
 
-	float multy = 0, max = 0; 					// n - размера массива
+	float multy = 0, max = 0;
 
 	cout <<"Enter the number of array: ";
 	cin >> n;
@@ -33,7 +33,7 @@ int main(){
 		cout << "\nmulty = " << multy;	
 		arr.clear();   							// удаление динамического массива
 	}
-    catch (invalid_argument e){  				// Вывод ошибки для пользователя
+    catch (invalid_argument e){  			// Вывод ошибки для пользователя
        cout << e.what();
     }
 }
