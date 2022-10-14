@@ -6,7 +6,7 @@
 
 using namespace std;
 using namespace calc;
-using vector_float = vector<float>;
+using vector_float = vector<float>; 
 
 int main(){
 	const string filename = "data";
@@ -24,7 +24,7 @@ int main(){
 	 try{        								// protected code
 	 	check_data(n,max);
 
-		vector_float arr(n);	
+		vector_float arr(n);					// инициализирование вектора
 	 	write_file(max,n,filename);
 	 	n2 = size_file(filename);
 		read_file(arr, filename, n2);	

@@ -30,10 +30,8 @@ void write_file(unsigned nmax, unsigned n, const string &filename){
 		x =  (float)rand()/(float) RAND_MAX*nmax;
 		f << x;
 		f << endl; 											// записать символ перехода на новую строку
-		// cout << x << " ";
 	} 
 	f.close();
-	// cout << "\n";
 }
 
 
