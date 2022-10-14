@@ -3,9 +3,9 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <string>
+#include "calc.h" 
 
-using namespace std;
-using vector_float = vector<float>;
 
 namespace calc {
 
