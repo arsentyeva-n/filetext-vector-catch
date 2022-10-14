@@ -6,7 +6,7 @@
 
 using namespace std;
 using namespace calc;
-using vector_float = vector<float>; 
+using vector_float = vector<float>; 						// составной тип
 
 int main(){
 	const string filename = "data";
@@ -24,7 +24,7 @@ int main(){
 	 try{        								// protected code
 	 	check_data(n,max);
 
-		vector_float arr(n);					// инициализирование вектора
+		vector_float arr(n);					        // инициализирование вектора
 	 	write_file(max,n,filename);
 	 	n2 = size_file(filename);
 		read_file(arr, filename, n2);	
@@ -33,7 +33,7 @@ int main(){
 		cout << "\nmulty = " << multy;	
 		arr.clear();   							// удаление динамического массива
 	}
-    catch (invalid_argument e){  			// Вывод ошибки для пользователя
+    catch (invalid_argument e){  						// Вывод ошибки для пользователя
        cout << e.what();
     }
 }
